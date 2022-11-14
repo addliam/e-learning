@@ -16,6 +16,7 @@ module.exports = {
         info: "#0DCAF0",
         white1: "#F8F9FA",
         dark: "#212529",
+        lightGray: "#F2F2F2",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
