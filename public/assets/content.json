@@ -42,7 +42,7 @@
         }]
     },
     {
-        "subindice": 1.2,
+        "subindice": 1.3,
         "numeroPaginas": 3,
         "paginas": [{
             "tipo": "texto",
@@ -62,7 +62,7 @@
         }]
     },
     {
-        "subindice": 1.2,
+        "subindice": 1.4,
         "numeroPaginas": 3,
         "paginas": [{
             "tipo": "texto",
