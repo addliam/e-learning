@@ -1,5 +1,6 @@
 [{
     "nombre": "mruv",
+    "tipo": "capitulos",
     "items": [ {
         "indice": 1,
         "titulo": "Introduccion",
