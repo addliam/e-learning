@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import SmallTopBar from '../components/general/SmallTopBar'
 import ItemDropDownBox from '../components/menu/ItemDropDownBox'
+import staticData from '../public/assets/data.json'
 
 const mruv = () => {
   return (
@@ -23,10 +24,17 @@ const mruv = () => {
         </div>
       </section>
       <section className='flex flex-row flex-wrap mx-28 mt-12 gap-x-6 gap-y-8'>
-        <ItemDropDownBox icon={"/assets/icons/introIcon.png"} title={"Introduccion"} />
+        {
+          // console.log(staticData)
+          staticData[0].items.map((itemData)=>{
+            return (<ItemDropDownBox key={itemData.indice} data={itemData} />)
+            // console.log(item)
+          })
+        }
+        {/* <ItemDropDownBox icon={"/assets/icons/introIcon.png"} title={"Introduccion"} />
         <ItemDropDownBox icon={"/assets/icons/formulaIcon.png"} title={"Formula"} />
         <ItemDropDownBox icon={"/assets/icons/physicsIcon.png"} title={"Ejercicios resueltos"} />
-        <ItemDropDownBox icon={"/assets/icons/f1carIcon.png"} title={"Ejemplos aplicativos"} />
+        <ItemDropDownBox icon={"/assets/icons/f1carIcon.png"} title={"Ejemplos aplicativos"} /> */}
       </section>
     </main>
   )
