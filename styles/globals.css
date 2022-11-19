@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -15,6 +16,34 @@ body {
   height: 100vh;
 }
 
-.dropdown-extra{
-  position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 9.74659px, 0px);
+section.content{
+  /* font-family: 'Fira Sans'; */
+}
+
+.content-subtitle{
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2D3846;
+  line-height: 1.3em;
+  margin-bottom: .5em;
+}
+.content-paragraph{
+  color: #2d3846;
+  line-height: 170%;
+  font-size: 1.125rem;
+  font-weight: 400;
+  font-family: 'Fira Sans';
+}
+.content-alert{
+  color: #2d3846;
+  line-height: 160%;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: 'Fira Sans';
+}
+.content-paragraph .contrast{
+  font-weight: 600;
+}
+button.continue{
+  font-family: 'Fira Sans';
 }
