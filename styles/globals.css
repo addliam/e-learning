@@ -17,7 +17,7 @@ body {
 }
 
 section.content{
-  /* font-family: 'Fira Sans'; */
+  font-family: 'Fira Sans';
 }
 
 .content-subtitle{
@@ -26,6 +26,7 @@ section.content{
   color: #2D3846;
   line-height: 1.3em;
   margin-bottom: .5em;
+  margin-top: .4em;
 }
 .content-paragraph{
   color: #2d3846;
@@ -33,6 +34,7 @@ section.content{
   font-size: 1.125rem;
   font-weight: 400;
   font-family: 'Fira Sans';
+  margin-bottom: 1em;
 }
 .content-alert{
   color: #2d3846;
