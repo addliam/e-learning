@@ -49,3 +49,16 @@ section.content{
 button.continue{
   font-family: 'Fira Sans';
 }
+.question-indication{
+  color: #2d3846;
+  line-height: 170%;
+  font-size: 1.125rem;
+  font-weight: 400;
+  font-family: 'Fira Sans';
+}
+.question-hint{
+  color: #6b7f99;
+  font-size: 0.85em;
+  line-height: 140%;
+  font-weight: 400;
+}
