@@ -1,14 +1,30 @@
-import React from 'react'
+import React, {useState} from 'react'
 import ChoiceItem from './ChoiceItem'
+import ButtonComprobar from '../ButtonComprobar'
 
-const MultipleChoice = () => {
+const MultipleChoice = ({data}) => {
+    const [success, setSuccess] = useState(false)
+    const [isError, setIsError] = useState(false)
+    const [selectedOptions, setSelectedOptions] = useState([])
+    const opcionesCorrectas = data.correctas
+
+    const switchIndexInSelections = (value) => {
+        setSelectedOptions((selections)=>{
+            let alreadyExists = selections.find(v => v === value) !== undefined
+            return (alreadyExists)?(selections.filter((v)=>v!==value)):([...selections, value])
+        })
+    }
+
   return (
     <div className='multiple-choice-wrapper'>
-        <ChoiceItem text={"Fisica intermedio"} />
-        <ChoiceItem text={"Menos de 35 años"} />
-        <ChoiceItem text={"Ganas de aprender"} />
-        <ChoiceItem text={"Trigonometria basica"} />
-        <ChoiceItem text={"Ser muy perseverante"} />
+        {
+            data.opciones.map((opcion)=>(
+                <ChoiceItem key={opcion.indice} indice={opcion.indice} texto={opcion.texto} switchIndexInSelections={switchIndexInSelections}  />
+            ))
+        }
+        <div className='mt-[3em]'>
+            <ButtonComprobar />
+        </div>
     </div>
   )
 }

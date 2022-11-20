@@ -2,7 +2,10 @@ import React from 'react'
 import ButtonNext from '../../../components/general/ButtonNext'
 import MultipleChoice from '../../general/questions/multiple-choice/MultipleChoice'
 
+import MultipleChoiceData from '../../../public/assets/multiple-choice.json'
+
 const Mruv3 = () => {
+  const data = MultipleChoiceData[0]
   return (
     <>
         <h5 className='content-subtitle'>Practica: Principiante</h5>
@@ -10,8 +13,8 @@ const Mruv3 = () => {
           Son requisitos para tomar el curso
         </p>
         <p className="question-hint">Selecciona todas las que cumplan</p>
-        <MultipleChoice />
-        <ButtonNext link={"/mruv/1.1/2"} />
+        <MultipleChoice data={data} />
+        {/* <ButtonNext link={"/mruv/1.1/2"} /> */}
     </>
   )
 }

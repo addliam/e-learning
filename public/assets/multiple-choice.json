@@ -1,0 +1,25 @@
+[
+{
+    "opciones": [{
+        "indice": 1,
+        "texto": "Fisica intermedio"
+    },
+    {
+        "indice": 2,
+        "texto": "Menos de 35 años"
+    },    
+    {
+        "indice": 3,
+        "texto": "Ganas de aprender"
+    },    
+    {
+        "indice": 4,
+        "texto": "Trigonometria basica"
+    },    
+    {
+        "indice": 5,
+        "texto": "Ser muy perseverante"
+    }],
+    "correctas": [3,5]
+}    
+]
