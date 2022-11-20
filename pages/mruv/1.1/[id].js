@@ -43,7 +43,7 @@ const MruvIdHandler = () => {
                 </div>
             </section>
 
-            <section  ref={refContent} className='content flex justify-center my-4 overflow-y-scroll max-h-[30rem]'>
+            <section  ref={refContent} className='content relative flex justify-center my-4 overflow-y-scroll max-h-[30rem]'>
                 <div className="subsection_content w-[36.25rem] pt-6">
                     {
                         {

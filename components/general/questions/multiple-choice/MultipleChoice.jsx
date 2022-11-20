@@ -15,6 +15,10 @@ const MultipleChoice = ({data}) => {
         })
     }
 
+    const checkIfOptionsAreCorrect = () => {
+        return (opcionesCorrectas.every(v => selectedOptions.includes(v)))
+    }
+
   return (
     <div className='multiple-choice-wrapper'>
         {
@@ -23,7 +27,7 @@ const MultipleChoice = ({data}) => {
             ))
         }
         <div className='mt-[3em]'>
-            <ButtonComprobar />
+            <ButtonComprobar comprobation={checkIfOptionsAreCorrect} nextPage={''} />
         </div>
     </div>
   )
