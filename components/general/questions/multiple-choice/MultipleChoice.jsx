@@ -83,7 +83,7 @@ const MultipleChoice = ({data}) => {
             <ButtonBack link={"/mruv/1.1/2"} />
             {
                 success?(
-                    <ButtonNext link={"mruv/1.2/1"} />
+                    <ButtonNext link={"/mruv/1.2/1"} />
                 ):(
                     <ButtonComprobar comprobation={checkIfOptionsAreCorrect} successAction={successAction} failureAction={failureAction} />
                 )
