@@ -65,7 +65,7 @@ const MultipleChoice = ({data}) => {
                 <ChoiceItem key={opcion.indice} indice={opcion.indice} texto={opcion.texto} switchIndexInSelections={switchIndexInSelections}  />
             ))
         }
-        <div className='mt-[2em]'>
+        <div className='mt-[1.5em] min-h-[4.0625em]'>
         {
             isError?(
                 showError?(
@@ -78,8 +78,8 @@ const MultipleChoice = ({data}) => {
                 <SucessComponent />
             ):(<></>)
         }
-        </div>
-        <div className='w-full flex flex-row justify-between mt-[3em] pb-6'>
+        </div>        
+        <div className='w-full flex flex-row justify-between mt-[2em] pb-6'>
             <ButtonBack link={"/mruv/1.1/2"} />
             {
                 success?(
