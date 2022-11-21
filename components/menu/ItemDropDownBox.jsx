@@ -56,7 +56,7 @@ const ItemContent = ({contenido}) => {
                 contenido.map((capitulo)=>{
                     // Todo: add /example/1.3 before capitulo.numero
                     return (
-                        <ItemCapitulo key={capitulo.numero} title={`${capitulo.numero} ${capitulo.titulo}`} type={capitulo.tipo} status={capitulo.estado} href={`mruv/${capitulo.numero}`} />
+                        <ItemCapitulo key={capitulo.numero} title={`${capitulo.numero} ${capitulo.titulo}`} type={capitulo.tipo} status={capitulo.estado} href={`mruv/${capitulo.numero}/1`} />
                     )
                 })
             }
