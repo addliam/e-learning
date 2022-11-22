@@ -6,7 +6,7 @@ import ButtonNext from '../../ButtonNext'
 import ErrorComponent from '../../ErrorComponent'
 import SucessComponent from '../../SucessComponent'
 
-const MultipleChoice = ({data}) => {
+const MultipleChoice = ({data, back, next}) => {
     const [success, setSuccess] = useState(false)
     const [showError, setShowError] = useState(false)
     const [isError, setIsError] = useState(false)
@@ -80,10 +80,10 @@ const MultipleChoice = ({data}) => {
         }
         </div>        
         <div className='w-full flex flex-row justify-between mt-[2em] pb-6'>
-            <ButtonBack link={"/mruv/1.1/2"} />
+            <ButtonBack link={back} />
             {
                 success?(
-                    <ButtonNext link={"/mruv/1.2/1"} />
+                    <ButtonNext link={next} />
                 ):(
                     <ButtonComprobar comprobation={checkIfOptionsAreCorrect} successAction={successAction} failureAction={failureAction} />
                 )

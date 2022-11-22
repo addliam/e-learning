@@ -1,9 +1,9 @@
 import { useRouter } from 'next/router'
 import SectionLayout from '../../../components/general/SectionLayout'
 // MRUV SubSections for 1.1
-import Mruv1 from '../../../components/section/1.1/Mruv1'
-import Mruv2 from '../../../components/section/1.1/Mruv2'
-import Mruv3 from '../../../components/section/1.1/Mruv3'
+import Mruv1 from '../../../components/section/1.3/Mruv1'
+import Mruv2 from '../../../components/section/1.3/Mruv2'
+import Mruv3 from '../../../components/section/1.3/Mruv3'
 
 const MruvIdHandler = () => {
     const router = useRouter()

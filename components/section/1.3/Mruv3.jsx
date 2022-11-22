@@ -8,12 +8,12 @@ const Mruv3 = () => {
   const data = MultipleChoiceData[0]
   return (
     <>
-        <h5 className='content-subtitle'>Practica: Principiante</h5>
+        <h5 className='content-subtitle'>1.3.3 Practica: Principiante</h5>
         <p className='question-indication'>
           Son requisitos para tomar el curso
         </p>
         <p className="question-hint">Selecciona todas las que cumplan</p>
-        <MultipleChoice back={"/mruv/1.1/2"} next={"/mruv/1.2/1"} data={data} />
+        <MultipleChoice back={"/mruv/1.3/2"} next={"/mruv/1.4/1"} data={data} />
         {/* MultipleChoice should include ButtonBack n Next ? */}
     </>
   )

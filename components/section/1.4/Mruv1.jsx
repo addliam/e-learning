@@ -5,7 +5,7 @@ import ButtonNext from '../../general/ButtonNext'
 const Mruv1 = () => {
   return (
     <>
-        <h5 className='content-subtitle'>1.1 Empezamos</h5>
+        <h5 className='content-subtitle'>1.4 Principiante</h5>
         <p className='content-paragraph'>
           El MRUV o movimiento rectilíneo uniformemente variado, demuestra que la velocidad varía uniformemente con el tiempo. El MRUV se puede definir como un movimiento de un móvil con respecto a una referencia a lo largo de una línea recta, en la que su aceleración es siempre constante. Se dice que la velocidad del objeto experimenta cambios iguales en intervalos iguales de tiempo. En MRUV, la aceleración promedio y su aceleración instantánea son iguales.                   
         </p>
@@ -19,7 +19,7 @@ const Mruv1 = () => {
           El curso es para aprender algo nuevo que será importante durante toda la etapa escolar o quizás actualmente donde te encuentres estudiando como en la Universidad o en una academia esto es realizado para usted aprendiz pueda llevar el curso de manera más eficiente sin problema.                   
         </p>
         <div className='w-full flex justify-end mt-4 pb-6'>
-          <ButtonNext link={"/mruv/1.1/2"} />
+          <ButtonNext link={"/mruv/1.4/2"} />
         </div>
     </>
   )
