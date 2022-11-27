@@ -7,7 +7,7 @@ import staticData from '../public/assets/data.json'
 
 const mruv = () => {
   return (
-    <main className='bg-lightGray h-screen'>
+    <main className='bg-lightGray min-h-screen'>
       <SmallTopBar />
       <section className='my-4 mb-5'>
         <Link href={"/menu"} className='text-[#6D6D6D] font-semibold ml-12'>
@@ -23,7 +23,7 @@ const mruv = () => {
           <p className='max-w-[880px] text-[14px]'>El movil se desplaza sobre una trayectoria recta estando sometida a una aceleracion constante. Su velocidad varia constantemente, la velocidad aumenta o disminuye de forma permanente.</p>
         </div>
       </section>
-      <section className='flex flex-row flex-wrap mx-28 mt-12 gap-x-6 gap-y-8'>
+      <section className='flex flex-row flex-wrap mx-28 py-[2em] gap-x-6 gap-y-8'>
         {
           // console.log(staticData)
           staticData[0].items.map((itemData)=>{
