@@ -6,7 +6,7 @@ import CloseIcon from "../../public/assets/icons/CloseSimple.svg";
 import SmallTopBar from "./SmallTopBar";
 import ProgressBar from "./ProgressBar";
 
-const SectionLayout = ({ children, id, total }) => {
+const SectionLayout = ({ children, id, total, title }) => {
   const refContent = useRef(null);
 
   useEffect(() => {
@@ -29,7 +29,7 @@ const SectionLayout = ({ children, id, total }) => {
               ></Image>
             </Link>
             <span className="text-[17px] text-[#6B7F99] font-semibold">
-              1.1 Empezamos
+              {title ? title : "1.1 Empezamos"}
             </span>
           </div>
         </div>

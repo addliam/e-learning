@@ -1,28 +1,36 @@
-import React from 'react'
-import AlertContent from '../../general/AlertContent'
-import ButtonNext from '../../general/ButtonNext'
+import React from "react";
+import AlertContent from "../../general/AlertContent";
+import ButtonNext from "../../general/ButtonNext";
 
 const Mruv1 = () => {
   return (
     <>
-        <h5 className='content-subtitle'>1.1 Empezamos</h5>
-        <p className='content-paragraph'>
-          El MRUV o movimiento rectilíneo uniformemente variado, demuestra que la velocidad varía uniformemente con el tiempo. El MRUV se puede definir como un movimiento de un móvil con respecto a una referencia a lo largo de una línea recta, en la que su aceleración es siempre constante. Se dice que la velocidad del objeto experimenta cambios iguales en intervalos iguales de tiempo. En MRUV, la aceleración promedio y su aceleración instantánea son iguales.                   
-        </p>
-        <h5 className='content-subtitle'>Requisitos previos</h5>
-        <p className='content-paragraph'>
-          Obviamente uno de los requisitos evidentes para el curso es tener las ganas de querer aprender, no es necesario tener una base para el curso, tener un lugar donde pueda estar concentrado sin distracciones, tomar apuntes en un cuaderno, bloc de notas, etc.                   
-        </p>
-        <AlertContent text={"No existe un horario fijo para tomar las lecciones. Aprende bajo tus propias reglas y vuelve a leer cuando tengas dudas."} />
-        <h5 className='content-subtitle'>¿Que esperar del curso?</h5>
-        <p className='content-paragraph'>
-          El curso es para aprender algo nuevo que será importante durante toda la etapa escolar o quizás actualmente donde te encuentres estudiando como en la Universidad o en una academia esto es realizado para usted aprendiz pueda llevar el curso de manera más eficiente sin problema.                   
-        </p>
-        <div className='w-full flex justify-end mt-4 pb-6'>
-          <ButtonNext link={"/mruv/1.1/2"} />
-        </div>
+      <h5 className="content-subtitle">2.1 Formula simple</h5>
+      <p className="content-paragraph">
+        Siendo una cadena de caracteres cuyos símbolos pertenecen a un lenguaje
+        formal ya que la expresión llega a cumplir aquellas normas de buena
+        formación y admite una interpretación consistente en alguna área de la
+        matemática y en otros sistemas formales.
+      </p>
+      <h5 className="content-subtitle">Variables</h5>
+      <p className="content-paragraph">
+        Siguiendo las 5 fórmulas o ecuaciones para resolver ejercicios de
+        M.R.U.V de las cuales significan lo siguiente:
+      </p>
+      <p className="content-paragraph">Vo = Velocidad inicial</p>
+      <p className="content-paragraph">a = Aceleración</p>
+      <p className="content-paragraph">Vf = Velocidad final</p>
+      <p className="content-paragraph">d = Distancia recorrida</p>
+      <AlertContent
+        text={
+          "Recuerda que las variables de la formula deben estar en unidades del sistema internacional."
+        }
+      />
+      <div className="w-full flex justify-end mt-4 pb-6">
+        <ButtonNext link={"/mruv/2.1/2"} />
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default Mruv1
+export default Mruv1;
