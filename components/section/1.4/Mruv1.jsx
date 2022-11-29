@@ -8,23 +8,23 @@ const Mruv1 = () => {
     opciones: [
       {
         indice: 1,
-        texto: "3000",
+        texto: "d = 3000 y a = 2222.22",
       },
       {
         indice: 2,
-        texto: "3200",
+        texto: "d = 1300 y a = 8888.88",
       },
       {
         indice: 3,
-        texto: "3400",
+        texto: "d = 1350 y a = 3333.33",
       },
       {
         indice: 4,
-        texto: "1800",
+        texto: "d = 1400 y a = 3400.50",
       },
       {
         indice: 5,
-        texto: "2000",
+        texto: "d = 1500 y a = 3333.33",
       },
     ],
     correctas: [3],
