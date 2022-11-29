@@ -34,11 +34,8 @@ const Mruv1 = () => {
     <>
       <h5 className="content-subtitle">Practica: Intermedio</h5>
       <p className="question-indication">
-        Un auto parte del reposo con una aceleracion de 2 m/
-        <span className=" ">
-          <Equation value="s^2" errorHandler={defaultErrorHandler} />
-        </span>
-        . Cual es la velocidad que alcanza en el transcurso de 10 segundos.
+        Un auto parte del reposo con una aceleracion de 2 m/s² . Cual es la
+        velocidad que alcanza en el transcurso de 10 segundos.
       </p>
       <div className="py-[2.5em]">
         <Image
