@@ -1,28 +1,55 @@
-import React from 'react'
-import AlertContent from '../../general/AlertContent'
-import ButtonNext from '../../general/ButtonNext'
+import React from "react";
+import Image from "next/image";
+import MultipleChoice from "../../general/questions/multiple-choice/MultipleChoice";
+import SatelliteImage from "../../../public/assets/images/practica-1.4.webp";
 
 const Mruv1 = () => {
+  const data = {
+    opciones: [
+      {
+        indice: 1,
+        texto: "3000",
+      },
+      {
+        indice: 2,
+        texto: "3200",
+      },
+      {
+        indice: 3,
+        texto: "3400",
+      },
+      {
+        indice: 4,
+        texto: "1800",
+      },
+      {
+        indice: 5,
+        texto: "2000",
+      },
+    ],
+    correctas: [3],
+  };
   return (
     <>
-        <h5 className='content-subtitle'>1.4 Principiante</h5>
-        <p className='content-paragraph'>
-          El MRUV o movimiento rectilíneo uniformemente variado, demuestra que la velocidad varía uniformemente con el tiempo. El MRUV se puede definir como un movimiento de un móvil con respecto a una referencia a lo largo de una línea recta, en la que su aceleración es siempre constante. Se dice que la velocidad del objeto experimenta cambios iguales en intervalos iguales de tiempo. En MRUV, la aceleración promedio y su aceleración instantánea son iguales.                   
-        </p>
-        <h5 className='content-subtitle'>Requisitos previos</h5>
-        <p className='content-paragraph'>
-          Obviamente uno de los requisitos evidentes para el curso es tener las ganas de querer aprender, no es necesario tener una base para el curso, tener un lugar donde pueda estar concentrado sin distracciones, tomar apuntes en un cuaderno, bloc de notas, etc.                   
-        </p>
-        <AlertContent text={"No existe un horario fijo para tomar las lecciones. Aprende bajo tus propias reglas y vuelve a leer cuando tengas dudas."} />
-        <h5 className='content-subtitle'>¿Que esperar del curso?</h5>
-        <p className='content-paragraph'>
-          El curso es para aprender algo nuevo que será importante durante toda la etapa escolar o quizás actualmente donde te encuentres estudiando como en la Universidad o en una academia esto es realizado para usted aprendiz pueda llevar el curso de manera más eficiente sin problema.                   
-        </p>
-        <div className='w-full flex justify-end mt-4 pb-6'>
-          <ButtonNext link={"/mruv/1.4/2"} />
-        </div>
+      <h5 className="content-subtitle">1.4 Practica: Principiante</h5>
+      <p className="question-indication">
+        Un satélite en el espacio que se encuentra quieto, va modificar su
+        posición moviéndose en línea recta, si este se logra tomar una velocidad
+        de 300 m/s en tan solo 0,9s ¿Cual es la aceleración que se aplicó y la
+        distancia recorrida en ese corto tiempo?
+      </p>
+      <div className="my-[2em] flex justify-center">
+        <Image
+          src={SatelliteImage}
+          width={520}
+          height={312}
+          alt="satelite europeo animado"
+        ></Image>
+      </div>
+      <p className="question-hint">Selecciona la alternativa correcta</p>
+      <MultipleChoice back={"/mruv/1.3/2"} next={"/mruv/1.4/1"} data={data} />
     </>
-  )
-}
+  );
+};
 
-export default Mruv1
+export default Mruv1;
